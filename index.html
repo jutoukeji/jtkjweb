@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+		<title>聚头科技</title>
+
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/animations.css" rel="stylesheet" />
+
+		<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+		<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+		<!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<header>
+			<nav id="topNav" class="navbar navbar-default main-menu transition">
+				<div class="container top-nav transition">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsingNavbar" aria-expanded="false">
+                        <span class="icon">
+                            <span class="icon-bar top-bar"></span>
+    			            <span class="icon-bar bottom-bar"></span>
+                        </span>
+                    </button>
+					<a class="navbar-brand page-scroll logo-box" href="#slider">
+						<img src="img/logo.png" />
+					</a>
+					<div class="navbar-toggleable-sm fl-right" id="collapsingNavbar">
+						<ul class="nav navbar-nav nav-stacked">
+							<li class="active">
+								<a href="#slider">首页</a>
+							</li>
+							<li>
+								<a href="#services">公司服务</a>
+							</li>
+							<li>
+								<a href="#case">案例</a>
+							</li>
+							<li>
+								<a href="#about">关于我们</a>
+							</li>
+							<!--<li>
+								<a href="#contact">联系我们</a>
+							</li>-->
+							<li class="tel-box">
+								<img src="img/tel.png" />
+								<span>186 7449 9386</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<section id="slider">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="img/banner1.png" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="img/banner1.png" alt="Second slide">
+					</div>
+					<div class="item">
+						<img src="img/banner1.png" alt="Third slide">
+					</div>
+				</div>
+				<!-- 轮播（Carousel）导航 -->
+				<!-- 轮播（Carousel）导航 -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+		<section id="services">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 txt-center animated" data-name="fadeInDown">
+						<!--<h2 class="mbottom50"><span class="highlight-text">Services</span></h2>-->
+						<!--<p class="col-md-12 col-sm-12 col-xs-12 txt-center font20">我们的服务</p>-->
+						<img src="img/fuwu_tit.png" class="mbottom50">
+					</div>
+					<div class="our-services">
+						<div class="row animated" data-name="fadeInLeft">
+							<div class="col-md-4 col-sm-4 col-xs-12 txt-center">
+								<div class="service-box">
+									<div class="icon">
+										<img src="img/android.png">
+										<h3 class="mtop15">安卓APP开发</h3>
+									</div>
+									<p>致力于Android手机APP开发，更兼容，更便捷</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12 txt-center">
+								<div class="service-box">
+									<div class="icon">
+										<img src="img/ios.png">
+										<h3 class="mtop15">IOS APP开发</h3>
+									</div>
+									<p>高端IOS APP外包全程一站式的APP软件开发</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12 txt-center">
+								<div class="service-box">
+									<div class="icon">
+										<img src="img/html5.png">
+										<h3 class="mtop15">HTML5开发</h3>
+									</div>
+									<p>跨平台混合式开发技术，实现用户的良好体验</p>
+								</div>
+							</div>
+
+						</div>
+						<div class="row animated" data-name="fadeInRight">
+							<div class="col-md-4 col-sm-4 col-xs-12 txt-center">
+								<div class="service-box">
+									<div class="icon">
+										<img src="img/xcx.png">
+										<h3 class="mtop15">小程序开发</h3>
+									</div>
+									<p>微信小程序个性化定制开发，助力企业抢占小程序流量红利</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12 txt-center">
+								<div class="service-box">
+									<div class="icon">
+										<img src="img/gzh.png">
+										<h3 class="mtop15">微信公众号开发</h3>
+									</div>
+									<p>提供微信公众平台开发、微信商城制作、企业个性化微信平台开发解决方案</p>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-12 txt-center">
+								<div class="service-box">
+									<div class="icon">
+										<img src="img/dzkf.png">
+										<h3 class="mtop15">项目定制开发</h3>
+									</div>
+									<p>为您量身定制的软件，更契合、更专业</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="case">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 txt-center animated" data-name="fadeInDown">
+						<img src="img/case_tit.png" class="mbottom50">
+					</div>
+					<div class="case-box">
+						<div id="caseCarousel" class="carousel slide" data-ride="carousel">
+							<!-- 轮播（Carousel）指标 -->
+							<ol class="carousel-indicators">
+								<li data-target="#caseCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#caseCarousel" data-slide-to="1"></li>
+							</ol>
+							<!-- 轮播（Carousel）项目 -->
+							<div class="carousel-inner bor_btm">
+								<div class="item active">
+									<div class="pic row">
+										<img class="col-md-4 col-sm-4 col-xs-4" src="img/case1.png">
+										<img class="col-md-4 col-sm-4 col-xs-4" src="img/case1.png">
+										<img class="col-md-4 col-sm-4 col-xs-4" src="img/case1.png">
+									</div>
+								</div>
+								<div class="item">
+									<div class="pic">
+										<img class="col-md-4 col-sm-4 col-xs-4" src="img/case1.png">
+										<img class="col-md-4 col-sm-4 col-xs-4" src="img/case1.png">
+										<img class="col-md-4 col-sm-4 col-xs-4" src="img/case1.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<!-- Section Header -->
+					<div class="col-md-12 col-sm-12 col-xs-12 txt-center animated" data-name="fadeInDown">
+						<!--<h2 class="mbottom50"><span class="highlight-text">About</span></h2>-->
+						<!--<p class="col-md-12 col-sm-12 col-xs-12 txt-center font20">
+							关于我们
+						</p>-->
+						<img src="img/gywm_tit.png" class="mbottom50">
+					</div>
+					<!-- Section Header End -->
+
+					<div class="col-md-6 col-sm-6 col-xs-12 features animated" data-name="fadeInLeftBig">
+						<img src="img/features.png" alt="Custom Image">
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p></p>
+						<div class="row animated" data-name="fadeInDown">
+							<div class="col-md-11">
+								<strong>公司介绍</strong>
+								<p>深圳聚头科技有限公司（Shenzhen Jutou Technology Co.,Ltd）,创立于2018年。聚头科技致力于为客户提供先进的信息技术、研发和业务流程外包服务。 业务主要分布在电子商务、生活服务、教育培训、旅游出行、智能医疗、休闲娱乐、餐饮服务、企业信息等行业。 我们完全按需求为客户量身定做软件系统，使其能够更好限度的融入客户的企业文化并发挥其重大作用。同时我们为客户提供科学的解决方案和落地实现支撑。
+								</p>
+							</div>
+						</div>
+						<div class="row animated" data-name="fadeInRightBig">
+							<div class="col-md-11">
+								<strong></strong>
+								<p>与聚头科技合作，您就拥有了一个经验丰富、技术精湛的外包合作伙伴，可帮助您提高软件解决方案的质量，缩短软件开发时间并降低软件开发成本。我们承诺你的商业价值。</p>
+							</div>
+						</div>
+						<div class="row animated" data-name="fadeInUpBig">
+							<div class="col-md-11">
+								<strong>联系我们</strong>
+								<p>
+									mobile: 18674499386 18218659801<br/> 
+									Email: wangwz@jutoukeji.cn / liujg@jutoukeji.cn
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12 txt-center animated">
+						<h2 class="mbottom50"><span class="highlight-text">Contact us</span></h2>
+					</div>
+					<div>
+						<div class="col-md-6 animated" data-name="fadeInLeftBig">
+							<input type="text" class="form-control" placeholder="姓名" id="name" required="" data-validation-required-message="Please enter your name">
+							<p class="help-block"></p>
+						</div>
+						<div class="col-md-6 animated" data-name="fadeInRightBig">
+							<input type="email" class="form-control" placeholder="邮箱" id="email" required="" data-validation-required-message="Please enter your email">
+						</div>
+						<div class="col-md-12 animated" data-name="fadeInDown">
+							<textarea rows="10" cols="100" class="form-control" placeholder="信息" id="message" required="" data-validation-required-message="Please enter your message" minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+						</div>
+						<div class="col-md-4 col-md-offset-5 animated" data-name="fadeInRightBig">
+							<button type="submit" class="btn btn-primary">提交</button></div>
+					</div>
+				</div>
+			</div>
+		</section>-->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-containertent">
+						<p class="txt-center">Copyright © 2018 深圳聚头科技有限公司.版权所有.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+		<script>
+			var mdArr = [0, $("#services").offset().top, $("#case").offset().top, $("#about").offset().top];
+			var animatedArr = [];
+			$(".animated").each(function() {
+				var obj = {
+					top: $(this).offset().top - $(window).height(),
+					obj: $(this),
+					animateName: $(this).attr("data-name") || "fadeInDown"
+				}
+				animatedArr.push(obj);
+			});
+			$(document).ready(function() {
+				$(".navbar-nav li a").on("click touch", function(e) {
+					e.preventDefault();
+					$(window).off("scroll");
+					setTimeout(function() {
+						$(window).on("scroll", scrollEvent);
+					}, 450);
+					$(this).parent().addClass("active").siblings("li").removeClass("active");
+					var scrollTop = $($(this).attr('href')).offset().top;
+					$('html,body').animate({
+						scrollTop: scrollTop
+					}, 400);
+					if(scrollTop > 100) {
+						$(".main-menu").addClass("minified");
+					} else {
+						$(".main-menu").removeClass("minified");
+					}
+				});
+
+				addAnimateClass($(window).scrollTop(), animatedArr);
+
+				$(window).on("scroll", scrollEvent);
+			});
+
+			function addAnimateClass(scrollTop, animatedArr) {
+				for(var i = 0; i < animatedArr.length; i++) {
+					var item = animatedArr[i];
+					if(scrollTop >= item.top) {
+						item.obj.addClass(item.animateName);
+					}
+				}
+			}
+
+			function scrollEvent() {
+				var scrollTop = $(this).scrollTop() + 70;
+				if(scrollTop > 100) {
+					$(".main-menu").addClass("minified");
+				} else {
+					$(".main-menu").removeClass("minified");
+				}
+
+				$(".navbar-nav li").removeClass("active");
+				if(scrollTop >= mdArr[0] && scrollTop < mdArr[1]) {
+					$(".navbar-nav li").eq(0).addClass("active");
+				} else if(scrollTop >= mdArr[1] && scrollTop < mdArr[2]) {
+					$(".navbar-nav li").eq(1).addClass("active");
+				} else if(scrollTop >= mdArr[2] && scrollTop < mdArr[3]) {
+					$(".navbar-nav li").eq(2).addClass("active");
+				} else if(scrollTop >= mdArr[3]) {
+					$(".navbar-nav li").eq(3).addClass("active");
+				}
+				addAnimateClass(scrollTop, animatedArr);
+			}
+		</script>
+	</body>
+
+</html>
