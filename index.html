@@ -6,7 +6,7 @@
         <meta name="description" content="深圳聚头科技是一家专业软件定制开发的科技公司,提供:软件开发外包、系统开发、安卓app开发、IOSapp开发、HTML5开发、微信开发,一站式手机APP等软件外包服务。">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0;">
 		
 		<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 		<title>聚头科技</title>
@@ -55,7 +55,7 @@
 							<!--<li>
 								<a href="#contact">联系我们</a>
 							</li>-->
-							<li class="tel-box">
+							<li class="tel-box" style="display: none;">
 								<img src="img/tel.png" />
 								<span>186 7449 9386</span>
 							</li>
@@ -177,9 +177,34 @@
 					<div class="case-box">
 						<div class="swiper-container">
 						    <div class="swiper-wrapper">
-						        <div class="swiper-slide"><img src="img/case1.png"></div>
-						        <div class="swiper-slide"><img src="img/case2.png"></div>
-						        <div class="swiper-slide"><img src="img/case3.png"></div>
+						        <div class="swiper-slide">
+						        	<img src="img/case1.png">
+						        	<div class="swiper-tips">
+						        		<p>益理财</p>
+						        		<p class="txt-left">益理财是华西证券移动端网上商城，可进行基金、理财产品网上便捷交易，采用原生+H5开发模式，开发成本更低，版本升级更便捷  。。。</p>
+						        	</div>
+						        </div>
+						        <div class="swiper-slide">
+						        	<img src="img/case2.png">
+						        	<div class="swiper-tips">
+						        		<p>云闪付</p>
+						        		<p class="txt-left">益理财是华西证券移动端网上商城，可进行基金、理财产品网上便捷交易，采用原生+H5开发模式，开发成本更低，版本升级更便捷  。。。</p>
+						        	</div>
+						        </div>
+						        <div class="swiper-slide">
+						        	<img src="img/case3.png">
+						        	<div class="swiper-tips">
+						        		<p>好车主</p>
+						        		<p class="txt-left">益理财是华西证券移动端网上商城，可进行基金、理财产品网上便捷交易，采用原生+H5开发模式，开发成本更低，版本升级更便捷  。。。</p>
+						        	</div>
+						        </div>
+						        <div class="swiper-slide">
+						        	<img src="img/case4.png">
+						        	<div class="swiper-tips">
+						        		<p>益理财</p>
+						        		<p class="txt-left">益理财是华西证券移动端网上商城，可进行基金、理财产品网上便捷交易，采用原生+H5开发模式，开发成本更低，版本升级更便捷  。。。</p>
+						        	</div>
+						        </div>
 						    </div>
 						    <!-- 如果需要分页器 -->
 						    <!--<div class="swiper-pagination"></div>-->
@@ -367,13 +392,20 @@
 					}
 					addAnimateClass(scrollTop, animatedArr);
 				}
-		
-		
+				
+				var spv = 3;
+				var cs = false;
+				if($(window).width() <= 600){
+					spv = 1;
+					cs = true;
+					$("#collapsingNavbar").addClass("collapse");
+				}
 				var mySwiper = new Swiper('.swiper-container', {
 					loop: true, // 循环模式选项
 					autoplay:true,
-					slidesPerView : 3,
+					slidesPerView : spv,
 			  		slidesPerGroup : 1,
+			  		centeredSlides : cs,
 					// 如果需要前进后退按钮
 					navigation: {
 						nextEl: '.swiper-button-next',
