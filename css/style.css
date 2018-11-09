@@ -107,6 +107,7 @@ h6 {
 .thumbnail a>img,
 .thumbnail>img {
 	height: 600px;
+	width: 100%;
 }
 
 @media screen and (max-width: 600px) {
@@ -190,3 +191,6 @@ input.form-control{
 	margin: 0 15px;
 }
 
+.swiper-container {
+    width: 1170px;
+}
